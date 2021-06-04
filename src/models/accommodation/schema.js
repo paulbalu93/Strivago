@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
-const accommodationSchema = new Schema(
+const accommodationsSchema = new Schema(
 	{
 		name: {
 			type: String,
@@ -23,4 +23,4 @@ const accommodationSchema = new Schema(
 	{ timestamps: true }
 );
 
-export default accommodationSchema;
+export default accommodationsSchema;

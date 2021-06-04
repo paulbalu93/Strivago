@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import accommodationRouter from './services/products/index.js';
+import accommodationsRouter from './services/products/index.js';
 
 const server = express();
 server.use(express.json());
@@ -10,6 +10,6 @@ server.get('/test', (req, res) => {
 	res.status(200).send({ message: 'Test success!' });
 });
 
-server.use('/accommodation', accommodationRouter);
+server.use('/accommodation', accommodationsRouter);
 
 export default server;
